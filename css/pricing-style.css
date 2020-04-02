@@ -1,0 +1,138 @@
+.demo {
+  padding: 100px 0;
+}
+.heading-title {
+  margin-bottom: 100px;
+}
+
+.pricingTable {
+  border: 1px solid #b1b1b9;
+  text-align: center;
+  color: #333;
+  padding: 50px 0 25px;
+  margin-top: 30px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.pricingTable .pricing-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #b1b1b9;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  padding: 10px;
+  transform: translateX(-50%);
+  transition: all 0.5s ease 0s;
+}
+
+.pricingTable:hover .pricing-icon {
+  border: 1px solid #fbb815;
+  background: #fbb815;
+}
+
+.pricingTable .pricing-icon i {
+  width: 100%;
+  height: 100%;
+  line-height: 58px;
+  border-radius: 50%;
+  background: #fbb815;
+  font-size: 30px;
+  color: #fff;
+  transition: all 0.5s ease 0s;
+}
+
+.pricingTable:hover .pricing-icon i {
+  color: #fbb815;
+  background: #fff;
+}
+
+.pricingTable .price-Value {
+  display: inline-block;
+  font-size: 60px;
+  color: #494949;
+  position: relative;
+}
+
+.pricingTable .currency {
+  font-size: 25px;
+  position: absolute;
+  top: 18px;
+  left: -18px;
+}
+
+.pricingTable .month {
+  display: block;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.pricingTable .pricingHeader {
+  position: relative;
+  z-index: 1;
+}
+
+.pricingTable .pricingHeader:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #b1b1b9;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+
+.pricingTable .title {
+  width: 50%;
+  background: #fbb815;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.pricingTable .pricing-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+
+.pricingTable .pricingTable-signup {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: #fbb815;
+  border: 1px solid #fbb815;
+  border-radius: 50px;
+  padding: 5px 20px;
+  transition: all 0.5s ease 0s;
+}
+
+.pricingTable .pricingTable-signup:hover {
+  background: #fff;
+  color: #fbb815;
+}
+
+@media only screen and (max-width: 990px) {
+  .pricingTable {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pricingTable {
+    margin-bottom: 60px;
+  }
+}
