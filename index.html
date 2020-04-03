@@ -85,6 +85,10 @@
       overflow-x: hidden !important;
       /* background: #f6f6f6; */
     }
+
+    .modal-content {
+      border-radius: 15px;
+    }
   </style>
 </head>
 
@@ -94,14 +98,14 @@
     <div class="modal fade" id="getALicenseCenter" tabindex="-1" role="dialog" aria-labelledby="getALicenseCenterTitle"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
+        <div class="modal-content px-3">
           <div class="modal-header">
             <h5 class="modal-title" id="getALicenseLongTitle">Get a license</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <form action="" method="dialog">
+          <form action="https://api.cheaplead.org/getLicense/validate" method="POST">
             <div class="modal-body">
               <div class="form-group">
                 <label for="emailId" class="col-form-label">Email:</label>
@@ -113,14 +117,16 @@
                 <label for="emailId" class="col-form-label">Select a package:</label>
 
                 <div class="selectCon">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="package" id="standardPackageId"
-                      value="standardPackage" required>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="package" id="trialPackageId" required>
+                    <label class="form-check-label" for="trialPackageId">Free (7 days trial)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="package" id="standardPackageId" required>
                     <label class="form-check-label" for="standardPackageId">Standard Package ($49.99)</label>
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="package" id="premiumPackageId"
-                      value="premiumPackage" required>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="package" id="premiumPackageId" required>
                     <label class="form-check-label" for="premiumPackageId">Premium Package ($99.99)</label>
                   </div>
                 </div>
@@ -128,7 +134,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn" data-dismiss="modal" onclick="$('form input').val('')">Close</button>
-              <button type="submit" class="btn btn-primary">Purchase</button>
+              <button type="submit" class="btn btn-warning">Purchase</button>
             </div>
           </form>
         </div>
