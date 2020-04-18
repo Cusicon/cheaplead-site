@@ -1,4 +1,10 @@
 /* Base */
+
+* {
+  font-family: "BreeSerif", serif !important;
+  color: #28324a !important;
+}
+
 body {
   line-height: 1.7;
   color: gray;
