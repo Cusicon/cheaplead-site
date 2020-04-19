@@ -7,7 +7,7 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="images/icon.png">
   <link rel="stylesheet" href="fonts/icomoon/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
@@ -36,7 +36,7 @@
   <meta name="twitter:image" content="http://cheaplead.net/images/logo.png">
   <style type="text/css">
     .tb-site-footer .tb-newsletter.tb-style8 button {
-      background-color: #fbb814;
+      background-color: #fcb917;
     }
 
     .tb-site-footer .tb-newsletter.tb-style8 button:hover {
@@ -45,7 +45,7 @@
   </style>
   <style type="text/css">
     .tb-site-footer .tb-newsletter.tb-style8 button {
-      background-color: #fbb814;
+      background-color: #fcb917;
     }
 
     .tb-site-footer .tb-newsletter.tb-style8 button:hover {
@@ -73,7 +73,6 @@
 
     body {
       overflow-x: hidden !important;
-      /* background: #f6f6f6; */
     }
 
     .modal-content {
@@ -100,8 +99,8 @@
               <div class="form-group">
                 <label for="emailId" class="col-form-label">Email:</label>
 
-                <input type="text" class="form-control px-4" id="emailId" name="email" placeholder="yourname@domain.com"
-                  required>
+                <input type="email" class="form-control px-4" id="emailId" name="email"
+                  placeholder="yourname@domain.com" required>
               </div>
               <div class="form-group">
                 <label for="emailId" class="col-form-label">Select a package:</label>
@@ -109,22 +108,23 @@
                 <div class="selectCon">
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="package" id="trialPackageId" required>
-                    <label class="form-check-label" for="trialPackageId">Free (7 days trial)</label>
+                    <label class="form-check-label" for="trialPackageId">Free (14 days trial)</label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="package" id="standardPackageId" required>
-                    <label class="form-check-label" for="standardPackageId">Standard Package ($49.99)</label>
+                    <label class="form-check-label" for="standardPackageId">Standard Package ($49)</label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="package" id="premiumPackageId" required>
-                    <label class="form-check-label" for="premiumPackageId">Premium Package ($99.99)</label>
+                    <label class="form-check-label" for="premiumPackageId">Premium Package ($99)</label>
                   </div>
                 </div>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn" data-dismiss="modal" onclick="$('form input').val('')">Close</button>
-              <button type="submit" class="btn btn-warning">Purchase</button>
+              <button type="button" class="btn not-my-button" data-dismiss="modal"
+                onclick="$('form input').val('')">Close</button>
+              <button type="submit" class="btn my-button">Purchase</button>
             </div>
           </form>
         </div>
@@ -141,7 +141,7 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-    <header class="site-navbar py-3 site-navbar-target" style="background: #f6f6f6;" role="banner">
+    <header class="site-navbar pt-2 site-navbar-target" role="banner">
       <div class="container px-4">
         <div class="row align-items-center">
           <div class="col-6 col-md-3 col-xl-4  d-block">
@@ -154,50 +154,78 @@
           <div class="col-12 col-md-9 col-xl-8 main-menu">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block ml-0 pl-0">
-                <li><a href="#process-section" class="nav-link">Process</a></li>
-                <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
-                <li><a href="javascript:void(0);" class="nav-link btn btn-warning pr-4 pl-4 mb-1" data-toggle="modal"
-                    data-target="#getALicenseCenter">
-                    Get a license
-                  </a></li>
+                <li class="d-lg-none text-center">
+                  <small>Menu</small>
+                </li>
+                <!-- <li>
+                  <a href="#process-section" class="nav-link">
+                    <small>PROCESS</small>
+                  </a>
+                </li> -->
+
+                <li>
+                  <a href="#pricing-section" class="nav-link">
+                    <small>PRICING</small>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="javascript:void(0);" class="nav-link" data-toggle="modal" data-target="#getALicenseCenter">
+                    <small>LOGIN</small>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="javascript:void(0);" class="py-2 my-button d-flex justify-content-center"
+                    style="background-color: #fcb917; border-radius: 50px; text-decoration: none !important;">
+                    <span class="icon-chrome pr-2 d-flex flex-row justify-content-center align-items-center"></span>
+                    <small class="d-flex flex-row justify-content-center align-items-center">ADD TO CHROME</small>
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>
-          <div class="col-6 col-md-9 d-inline-block d-lg-none ml-md-0"><a href="#"
-              class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
+          <div class="col-6 col-md-9 d-inline-block d-lg-none ml-md-0">
+            <a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"
+              style="text-decoration: none !important;">
+              <span class="icon-menu h3"></span>
+            </a>
           </div>
         </div>
       </div>
     </header>
-    <div class="site-blocks-cover"
-      style="overflow: hidden; background: url('images/logo.png') #f6f6f6 130% 150px no-repeat;">
+    <div class="site-blocks-cover" style="overflow: hidden; background: url('images/logo.png') 50vw 25vh no-repeat;">
       <div class="container px-4">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-12">
             <div class="row mt-3">
               <div class="col-lg-6 mr-auto">
                 <h1>Pull bulk leads <br> in a jiffy...</h1>
-                <p class="mb-5">
-                  Cheaplead lets you pull bulk prospects that matters, to the growth <br>
-                  of your business.
+                <p class="mb-4 col-lg-10 col-sm-8 p-0">
+                  Cheaplead lets you pull bulk leads (emails addresses) that matters, to the growth of your business.
                 </p>
-                <div>
+                <div class="col-lg-10 col-sm-8 p-0" id="try-demo">
+                  <small class="text-muted mb-3 d-inline-block">Try demo!</small>
                   <form action="#">
                     <div class="form-group">
-                      <input type="text" class="form-control p-4" placeholder="Place just a [domain] or [url]" required>
+                      <input type="text" id="filterSearch" name="filterSearch" class="form-control p-4"
+                        placeholder="Place just a [domain] or [url]" required>
                     </div>
                     <div>
-                      <button class="btn btn-warning mr-2 mb-2">Start puling</button>
+                      <button type="submit" class="btn my-button mr-2 mb-2">
+                        Start pulling
+                      </button>
                     </div>
                   </form>
                 </div>
+                <small class="d-block text-muted text-lowercase">20 million people use Cheaplead to pull leads.</small>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="site-section actual" id="process-section">
+    <div class="site-section actual process-section" id="process-section">
       <div class="feature-big">
         <div class="container px-4">
           <div class="row mb-5 site-section ">
@@ -225,8 +253,8 @@
             </div>
             <div class="col-lg-5 pr-lg-5 mr-auto mt-5 order-2 order-lg-1">
               <h2 class="text-black">Add a license, Start pulling...</h2>
-              <p class="mb-4">After 7 days of trial, you should add a license to continue using our software
-                on your <a href="#pricing-section" style="color: #fbb814 !important;">choosen
+              <p class="mb-4">After 14 days of trial, you should add a license to continue using our software
+                on your <a href="#pricing-section" style="color: #fcb917 !important;">choosen
                   package.</a>
               </p>
               <div class="author-box">
@@ -239,14 +267,13 @@
         </div>
       </div>
     </div>
-    <div class="site-section actual" id="pricing-section">
+    <div class="site-section actual pricing-section" id="pricing-section" style="background-color: #fcfcfc;">
       <div class="container px-4">
         <div class="row mb-5 justify-content-center text-center">
           <div class="px-4">
             <h2 class="section-title">Pricing</h2>
             <p class="lead">
               Get a Package to experience our outstanding bulk leads providing service.
-
             </p>
           </div>
         </div>
@@ -259,9 +286,9 @@
               <div class="price-Value">
                 <span class="currency">$</span>0
               </div>
-              <span class="month">7 days Trial</span>
+              <span class="month">14 days</span>
               <div class="pricingHeader">
-                <h3 class="title">FREE</h3>
+                <h3 class="title">TRIAL</h3>
               </div>
               <div class="pricing-content">
                 <ul>
@@ -282,7 +309,7 @@
                 <i class="icon-rocket"></i>
               </div>
               <div class="price-Value">
-                <span class="currency">$</span>49.99
+                <span class="currency">$</span>49
               </div>
               <span class="month">per month</span>
               <div class="pricingHeader">
@@ -307,7 +334,7 @@
                 <i class="icon-briefcase"></i>
               </div>
               <div class="price-Value">
-                <span class="currency">$</span>99.99
+                <span class="currency">$</span>99
               </div>
               <span class="month">per month</span>
               <div class="pricingHeader">
@@ -329,33 +356,46 @@
         </div>
       </div>
     </div>
-
-
-    <div class="site-section actual bg-light">
-      <div class="container px-4">
-        <div class="row mb-5 justify-content-center text-center">
-          <div class="px-4">
+    <div class="site-section actual chrome-section" id="chrome-section" style="border-bottom: 1px solid #757b8b23;">
+      <div class="container px-1">
+        <div class="row m-0 justify-content-center text-center">
+          <div class="px-4 py-2">
             <h2 class="section-title">It's free on Chrome</h2>
-            <p class="lead">
-              Cheaplead's Chrome extension lets you do same operation over there at ease, even while browsing.
-            </p>
-            <br>
+            <div class="mb-4 d-flex">
+              <p class="d-block lead">
+                Cheaplead's Chrome extension lets you immediately find and pull bulk leads (email addresses) behind
+                every websites.
+              </p>
+            </div>
             <center>
-              <button class="btn btn-warning mr-2 mb-2"><i class="icon-chrome"></i> &nbsp; Add to Chrome </button>
+              <button class="btn my-button px-5 py-3 d-flex justify-content-center">
+                <span class="icon-chrome pr-2 d-flex flex-row justify-content-center align-items-center"></span>
+                <small class="d-flex flex-row justify-content-center align-items-center">ADD TO CHROME</small>
+                <small class="d-flex flex-row justify-content-center align-items-center text-muted text-lowercase pl-2">
+                  (it's free)
+                </small>
+              </button>
             </center>
+
+            <section class="d-block rating text-sm">
+              <section class="rating-stars m-3">
+                <i class="icon-star" style="color: #fcb917 !important;"></i>
+                <i class="icon-star" style="color: #fcb917 !important;"></i>
+                <i class="icon-star" style="color: #fcb917 !important;"></i>
+                <i class="icon-star-half-full" style="color: #fcb917 !important;"></i>
+                <i class="icon-star" style="color: #eeeeee !important;"></i>
+                <small class="d-block text-muted text-lowercase">(354,000+ reviews)</small>
+              </section>
+            </section>
           </div>
         </div>
       </div>
     </div>
 
-
-
     <div class="footer">
-      <footer class="tb-site-footer tb-style1 tb-dark-footer tb-111-bg tb-stiky-footer">
-        <span hidden>
-          <hr>
+      <footer class="tb-site-footer tb-style1 tb-dark-footer tb-28324a-bg tb-stiky-footer">
+        <span id="footer-info-wrapper d-none">
           <div class="empty-space marg-lg-b40 marg-sm-b40"></div>
-          <hr>
           <div class="empty-space marg-lg-b60 marg-sm-b60"></div>
           <div class="container">
             <div class="row">
@@ -370,21 +410,22 @@
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-267">
                             <a href="#">Domain Search</a>
                           </li>
-                          <li id="menu-item-267"
+                          <li id="menu-item-268"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-267">
                             <a href="#">Email Finder</a>
                           </li>
-                          <li id="menu-item-267"
+                          <li id="menu-item-269"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-267">
                             <a href="#">Auto-leads puller</a>
                           </li>
-                          <li id="menu-item-268"
+                          <li id="menu-item-270"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268">
                             <a href="#">Domains fetcher</a>
                           </li>
-                          <li id="menu-item-269"
+                          <li id="menu-item-271"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-269">
                             <a href="#">API</a>
+                            <span class="badge badge-warning py-1 px-2 ml-1">Beta</span>
                           </li>
                         </ul>
                       </div>
@@ -395,13 +436,15 @@
                       <h2 class="tb-footer-widget-title tb-font-name"><span>COMPANY</span></h2>
                       <div class="menu-footer-container">
                         <ul id="menu-footer-1" class="menu">
-                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-267"><a
-                              href="#">About us</a>
+                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-267">
+                            <a href="#">About us</a>
                           </li>
-                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268"><a
-                              href="#">Blog</a></li>
-                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-269"><a
-                              href="#">Pricing</a></li>
+                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268">
+                            <a href="#">Blog</a>
+                          </li>
+                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-269">
+                            <a href="#">Pricing</a>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -411,11 +454,15 @@
                       <h2 class="tb-footer-widget-title tb-font-name"><span>SUPPORT</span></h2>
                       <div class="menu-footer-container">
                         <ul id="menu-footer-1" class="menu">
-                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-267"><a
-                              href="#">Contact us</a>
+                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-267">
+                            <a href="#">Faq</a>
                           </li>
-                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268"><a
-                              href="#">Help Center</a></li>
+                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268">
+                            <a href="#">Contact Us</a>
+                          </li>
+                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268">
+                            <a href="#">Help Center</a>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -425,11 +472,15 @@
                       <h2 class="tb-footer-widget-title tb-font-name"><span>LEGAL</span></h2>
                       <div class="menu-footer-container">
                         <ul id="menu-footer-1" class="menu">
-                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-267"><a
-                              href="#">Privacy Policy</a>
+                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-267">
+                            <a href="#">Privacy Policy</a>
                           </li>
-                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268"><a
-                              href="#">Terms &amp; Conditions</a></li>
+                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268">
+                            <a href="#">Terms of Service</a>
+                          </li>
+                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-269">
+                            <a href="#">Security</a>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -440,28 +491,39 @@
                 <div class="tb-style1">
                   <div class="mb-0 mt-4 text-center">
                     <p class="">
-                      <a href="#" class="p-3 h3"><span class="icon-twitter"></span></a>
-                      <a href="#" class="p-3 h3"><span class="icon-linkedin"></span></a>
-                      <a href="#" class="p-3 h3"><span class="icon-github"></span></a>
+                      <a href="https://twitter.com/cheaplead/" style="text-decoration: none !important;" class="p-3 h3">
+                        <span class="icon-twitter"></span>
+                      </a>
+                      <a href="https://linkedin.com/in/cheaplead/" style="text-decoration: none !important;"
+                        class="p-3 h3">
+                        <span class="icon-linkedin"></span>
+                      </a>
+                      <a href="https://youtube.com/cheaplead/" style="text-decoration: none !important;" class="p-3 h3">
+                        <span class="icon-youtube-play"></span>
+                      </a>
+                      <a href="https://github.com/cheaplead/" style="text-decoration: none !important;" class="p-3 h3">
+                        <span class="icon-github"></span>
+                      </a>
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <br>
         </span>
-        <div class="tb-copyright tb-style1 tb-f13-lg" style="border-top: 1px solid #757b8b23;">
+        <div class="empty-space marg-lg-b60 marg-sm-b60 d-sm-none d-lg-block"></div>
+        <div class="tb-copyright tb-style1 tb-f13-lg pb-4 m-0">
           <div class="container">
             <div class="tb-style1 text-center">
               <h3 class="h1">Cheaplead</h3>
-              <small class="text-light">© 2020 All Rights reserved</small>
+              <small class="text-light">© <span id="year">2020</span> All Rights reserved</small>
             </div>
           </div>
         </div>
       </footer>
     </div>
   </div>
+  <script>document.getElementById("year").innerHTML = new Date().getFullYear()</script>
   <script src="js/jquery-3.3.1.min.js" type="f654da0c451f208f03fe35c8-text/javascript"></script>
   <script src="js/jquery-ui.js" type="f654da0c451f208f03fe35c8-text/javascript"></script>
   <script src="js/popper.min.js" type="f654da0c451f208f03fe35c8-text/javascript"></script>

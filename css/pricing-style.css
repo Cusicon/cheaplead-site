@@ -6,21 +6,27 @@
 }
 
 .pricingTable {
-  border: 1px solid #b1b1b9;
+  border: 1px solid #ececec;
   text-align: center;
   color: #333;
   padding: 50px 0 25px;
   margin-top: 30px;
   position: relative;
   border-radius: 10px;
+  transition: all 0.5s ease 0s;
+}
+
+.pricingTable:hover,
+.pricingTable > * {
+  border-color: #b1b1b9 !important;
 }
 
 .pricingTable .pricing-icon {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: #fff;
-  border: 1px solid #b1b1b9;
+  background: #ffffff;
+  border: 1px solid #ececec;
   position: absolute;
   top: -40px;
   left: 50%;
@@ -41,13 +47,13 @@
   border-radius: 50%;
   background: #fbb815;
   font-size: 30px;
-  color: #fff;
+  color: #ffffff;
   transition: all 0.5s ease 0s;
 }
 
 .pricingTable:hover .pricing-icon i {
   color: #fbb815;
-  background: #fff;
+  background: #ffffff;
 }
 
 .pricingTable .price-Value {
@@ -79,7 +85,7 @@
   content: "";
   width: 100%;
   height: 1px;
-  background: #b1b1b9;
+  background: #ececec;
   position: absolute;
   top: 50%;
   left: 0;
@@ -94,7 +100,7 @@
   padding: 10px 0;
   font-size: 20px;
   font-weight: 600;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   position: relative;
   z-index: 1;
@@ -112,16 +118,17 @@
   display: inline-block;
   font-size: 15px;
   font-weight: 600;
-  color: #fff;
+  color: #ffffff;
   background: #fbb815;
   border: 1px solid #fbb815;
   border-radius: 50px;
   padding: 5px 20px;
   transition: all 0.5s ease 0s;
+  text-decoration: none !important;
 }
 
 .pricingTable .pricingTable-signup:hover {
-  background: #fff;
+  background: #ffffff;
   color: #fbb815;
 }
 
