@@ -18,7 +18,7 @@
 
 .pricingTable:hover,
 .pricingTable > * {
-  border-color: #b1b1b9 !important;
+  border-color: #fbb815 !important;
 }
 
 .pricingTable .pricing-icon {

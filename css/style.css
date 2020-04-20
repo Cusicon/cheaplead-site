@@ -913,6 +913,8 @@ h5,
   background-repeat: no-repeat;
   background-position: top;
   position: relative;
+  overflow: hidden !important;
+  background: url("../images/logo.png") 50vw 25vh no-repeat !important;
 }
 .site-blocks-cover:after {
   position: absolute;
