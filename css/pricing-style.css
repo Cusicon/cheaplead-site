@@ -18,7 +18,7 @@
 
 .pricingTable:hover,
 .pricingTable > * {
-  border-color: #fbb815 !important;
+  border-color: #fcb917 !important;
 }
 
 .pricingTable .pricing-icon {
@@ -36,8 +36,8 @@
 }
 
 .pricingTable:hover .pricing-icon {
-  border: 1px solid #fbb815;
-  background: #fbb815;
+  border: 1.5px solid #fcb917;
+  background: #fcb917;
 }
 
 .pricingTable .pricing-icon i {
@@ -45,14 +45,14 @@
   height: 100%;
   line-height: 58px;
   border-radius: 50%;
-  background: #fbb815;
+  background: #fcb917;
   font-size: 30px;
   color: #ffffff;
   transition: all 0.5s ease 0s;
 }
 
 .pricingTable:hover .pricing-icon i {
-  color: #fbb815;
+  color: #fcb917;
   background: #ffffff;
 }
 
@@ -94,7 +94,7 @@
 
 .pricingTable .title {
   width: 50%;
-  background: #fbb815;
+  background: #fcb917;
   margin: 10px auto;
   border-radius: 5px;
   padding: 10px 0;
@@ -119,17 +119,12 @@
   font-size: 15px;
   font-weight: 600;
   color: #ffffff;
-  background: #fbb815;
-  border: 1px solid #fbb815;
+  background: #fcb917;
+  border: 1.5px solid #fcb917;
   border-radius: 50px;
   padding: 5px 20px;
   transition: all 0.5s ease 0s;
   text-decoration: none !important;
-}
-
-.pricingTable .pricingTable-signup:hover {
-  background: #ffffff;
-  color: #fbb815;
 }
 
 @media only screen and (max-width: 990px) {

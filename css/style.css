@@ -41,7 +41,7 @@ button:disabled {
   opacity: 0.9 !important;
 }
 button:hover {
-  transform: scale(1.025) !important;
+  background: transparent !important;
 }
 button:active {
   transform: scale(0.9) !important;
@@ -64,7 +64,7 @@ button.my-button {
   display: inline-block;
   border-radius: 50px;
   background-color: #fcb917;
-  border: none;
+  border: 1.5px solid #fcb917;
   color: #28324a !important;
   text-align: center;
   font-size: 1rem;
@@ -918,7 +918,7 @@ h5,
 }
 .site-blocks-cover:after {
   position: absolute;
-  background-image: url("../images/svg_1.svg");
+  background-image: url("../images/svgs/svg_1.svg");
   content: "";
   right: 0;
 }
@@ -2732,5 +2732,8 @@ h5,
   }
   .navbar-brand {
     float: none;
+  }
+  .top-feature-image {
+    display: none !important;
   }
 }
