@@ -2726,10 +2726,6 @@ h5,
 }
 
 @media (max-width: 768px) {
-  /* * {
-    border: 1px solid red;
-  } */
-
   footer *,
   .site-blocks-cover * {
     text-align: center !important;
