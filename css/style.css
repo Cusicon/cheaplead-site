@@ -957,7 +957,7 @@ h5,
 }
 @media (max-width: 991.98px) {
   .site-blocks-cover h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 }
 .site-blocks-cover p {
@@ -2736,4 +2736,12 @@ h5,
   .top-feature-image {
     display: none !important;
   }
+}
+
+.nav-link:hover * {
+  color: #fcb917 !important;
+}
+
+.site-navigation * {
+  list-style-type: none;
 }
