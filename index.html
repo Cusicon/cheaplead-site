@@ -106,7 +106,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <form action="javascript:void(0)" method="POST">
+          <form method="POST" name="getALicense" netlify>
             <div class="modal-body">
               <div class="form-group">
                 <label for="emailId" class="col-form-label">Email:</label>
@@ -173,24 +173,24 @@
                 <nav class="site-navigation text-center px-3" id="navigation" role="navigation">
                   <ul class="site-menu mr-auto d-lg-block ml-0 pl-0">
                     <!-- <li>
-                      <a href="javascript:void(0);" data-title="" data-href="/" data-hrefcon="#homeCon"
+                      <a data-title="" data-href="/" data-hrefcon="#homeCon"
                         class="not-my-button nav-link pb-3" data-dismiss="modal">
                         <small>HOME</small>
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" data-title="Pricing" data-href="/?/pricing"
+                      <a data-title="Pricing" data-href="/?/pricing"
                         data-hrefcon="#pricingCon" class="not-my-button nav-link pb-3" data-dismiss="modal">
                         <small>PRICING</small>
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="not-my-button nav-link pb-3" data-dismiss="modal">
+                      <a class="not-my-button nav-link pb-3" data-dismiss="modal">
                         <small>SIGN UP</small>
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="not-my-button nav-link pb-3" data-dismiss="modal">
+                      <a class="not-my-button nav-link pb-3" data-dismiss="modal">
                         <small>LOG IN</small>
                       </a>
                     </li> -->
@@ -263,7 +263,7 @@
               <h2 class="section-title mb-5">Get a tool that fasten your workflow!</h2>
               <center>
                 <div class="col-lg-8 col-md-8 col-sm-12 p-0" id="trialCon">
-                  <form action="#">
+                  <form method="POST" name="getATrialLicense" netlify>
                     <div class="form-group mb-4">
                       <input type="text" id="startTrialEmail" name="startTrialEmail"
                         class="form-control text-center px-4 py-2" placeholder="Type email for 14 days free trial..."
@@ -273,7 +273,7 @@
                       <button type="submit" class="btn my-button mr-2 mb-2 py-2">
                         Get started for free
                       </button>
-                      <a href="javascript:void(0);" data-title="Demo" data-href="/?/demo" data-hrefcon="#demoCon"
+                      <a data-title="Demo" data-href="/?/demo" data-hrefcon="#demoCon"
                         class="btn not-my-button mr-2 mb-2 py-2" style="background-color: transparent !important;">
                         Get a Demo?
                       </a>
@@ -294,7 +294,7 @@
         <div class="row align-items-center">
           <div class="col-9 col-md-6 col-sm-6 col-lg-4 d-block">
             <h1 class="mb-0 site-logo">
-              <a href="javascript:void(0);" data-title="" data-href="/" data-hrefcon="#homeCon" class="color-sub h4"
+              <a data-title="" data-href="/" data-hrefcon="#homeCon" class="color-sub h4"
                 style="text-decoration: none !important;">
                 <img src="images/icon.png" width="40" alt="cheaplead">
                 <b>cheaplead</b>
@@ -305,21 +305,20 @@
             <nav class="site-navigation text-right" id="navigation" role="navigation">
               <ul class="site-menu mr-auto d-lg-block ml-0 pl-0">
                 <!-- <li>
-                  <a href="javascript:void(0);" data-title="Pricing" data-href="/?/pricing" data-hrefcon="#pricingCon"
+                  <a data-title="Pricing" data-href="/?/pricing" data-hrefcon="#pricingCon"
                     class="not-my-button nav-link">
                     <small>PRICING</small>
                   </a>
                 </li>
                 <div class="d-block d-lg-none p-3"></div>
                 <li>
-                  <a href="javascript:void(0);" class="not-my-button nav-link">
+                  <a class="not-my-button nav-link">
                     <small>SIGN UP</small>
                   </a>
                 </li> -->
                 <div class="d-block d-lg-none p-3"></div>
                 <li>
-                  <a href="javascript:void(0);" class="not-my-button nav-link" data-toggle="modal"
-                    data-target="#getALicenseCenter">
+                  <a class="not-my-button nav-link" data-toggle="modal" data-target="#getALicenseCenter">
                     <small>GET A LICENSE</small>
                   </a>
                 </li>
@@ -337,8 +336,8 @@
             </nav>
           </div>
           <div class="col-3 col-md-6 col-sm-6 d-inline-block d-lg-none ml-md-0">
-            <a href="javascript:void(0);" class="site-menu-toggle text-black float-right" data-toggle="modal"
-              data-target="#mobileMenu" style="text-decoration: none !important;">
+            <a class="site-menu-toggle text-black float-right" data-toggle="modal" data-target="#mobileMenu"
+              style="text-decoration: none !important;">
               <span class="icon-menu h3"></span>
             </a>
           </div>
@@ -361,7 +360,7 @@
                         marketing team.
                       </p>
                       <div class="p-0" id="trialCon">
-                        <form action="#">
+                        <form method="POST" name="getATrialLicense" netlify>
                           <div class="form-group">
                             <input type="text" id="startTrialEmail" name="startTrialEmail"
                               class="form-control px-4 py-2" placeholder="Type email for 14 days free trial..."
@@ -371,9 +370,8 @@
                             <button type="submit" class="btn my-button mr-2 mb-2 py-2">
                               Get started for free
                             </button>
-                            <a href="javascript:void(0);" data-toggle="modal" data-target="#getALicenseCenter"
-                              data-title="Demo" data-href="/?/demo" data-hrefcon="#demoCon"
-                              class="btn not-my-button mr-2 mb-2 py-2"
+                            <a data-toggle="modal" data-target="#getALicenseCenter" data-title="Demo"
+                              data-href="/?/demo" data-hrefcon="#demoCon" class="btn not-my-button mr-2 mb-2 py-2"
                               style="background-color: transparent !important;">
                               Get a License
                             </a>
@@ -586,7 +584,7 @@
                 <div class="demoContent py-3 pb-5 px-3 m-2"
                   style="background-color: #fcfcfc !important; border: 1px solid #ececec; box-shadow: 0px 2.5px 20px #ececec !important; border-radius: 25px;">
                   <div class="empty-space marg-lg-b35 marg-sm-b35"></div>
-                  <form action="#" class="px-2">
+                  <form method="POST" class="px-2" name="getADemo">
                     <div class="form-group mb-4">
                       <input type="text" id="filterSearch" name="filterSearch"
                         class="form-control text-center px-4 py-2" placeholder="Place just a url" required>
@@ -609,92 +607,50 @@
     </section>
     <footer class="footer">
       <footer class="tb-site-footer tb-style1 tb-dark-footer tb-28324a-bg tb-stiky-footer">
-        <div id="footer-info-wrapper d-none" hidden>
+        <div id="footer-info-wrapper">
           <div class="empty-space marg-lg-b40 marg-sm-b40"></div>
           <div class="empty-space marg-lg-b60 marg-sm-b60"></div>
           <div class="container">
             <div class="row">
               <div class="col-md-8 col-sm-12">
                 <div class="row">
-                  <div class="col-md-3 col-sm-6">
+                  <div class="col-md-6 col-sm-6">
                     <div id="nav_menu-2" class="widget tb-footer-item tb-footer_widget widget_nav_menu">
                       <h2 class="tb-font-name h6"><span>PRODUCTS</span></h2>
                       <div class="menu-footer-container">
                         <ul id="menu-footer" class="menu">
                           <li id="menu-item-267"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-267">
-                            <a href="javascript:void(0);">Domain Search</a>
+                            <a>Domain Search</a>
                           </li>
                           <li id="menu-item-268"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-267">
-                            <a href="javascript:void(0);">Email Finder</a>
+                            <a>Email Finder</a>
                           </li>
                           <li id="menu-item-269"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-267">
-                            <a href="javascript:void(0);">Auto-leads</a>
+                            <a>Auto-leads</a>
                           </li>
                           <li id="menu-item-270"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268">
-                            <a href="javascript:void(0);">Domain Fetcher</a>
-                          </li>
-                          <li id="menu-item-271"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-269">
-                            <a href="javascript:void(0);">API</a>
-                            <span class="badge badge-primary py-1 px-2 ml-1">Beta</span>
+                            <a>Domain Fetcher</a>
                           </li>
                         </ul>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3 col-sm-6">
+                  <div class="col-md-6 col-sm-6">
                     <div id="nav_menu-3" class="widget tb-footer-item tb-footer_widget widget_nav_menu">
-                      <h2 class="tb-font-name h6"><span>COMPANY</span></h2>
+                      <h2 class="tb-font-name h6"><span>CONTACT US</span></h2>
                       <div class="menu-footer-container">
                         <ul id="menu-footer-1" class="menu">
-                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-267">
-                            <a href="javascript:void(0);">About us</a>
-                          </li>
                           <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268">
-                            <a href="javascript:void(0);">Blog</a>
-                          </li>
-                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-269">
-                            <a href="javascript:void(0);">Pricing</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                    <div id="nav_menu-3" class="widget tb-footer-item tb-footer_widget widget_nav_menu">
-                      <h2 class="tb-font-name h6"><span>SUPPORT</span></h2>
-                      <div class="menu-footer-container">
-                        <ul id="menu-footer-1" class="menu">
-                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-267">
-                            <a href="javascript:void(0);">Faq</a>
-                          </li>
-                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268">
-                            <a href="mailto:cheapleadnet@gmail.com">Contact Us</a>
-                          </li>
-                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268">
-                            <a href="javascript:void(0);">Help Center</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                    <div id="nav_menu-3" class="widget tb-footer-item tb-footer_widget widget_nav_menu">
-                      <h2 class="tb-font-name h6"><span>LEGAL</span></h2>
-                      <div class="menu-footer-container">
-                        <ul id="menu-footer-1" class="menu">
-                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-267">
-                            <a href="javascript:void(0);">Privacy Policy</a>
-                          </li>
-                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268">
-                            <a href="javascript:void(0);">Terms of Service</a>
-                          </li>
-                          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-269">
-                            <a href="javascript:void(0);">Safety & Security</a>
+                            <a href="mailto:cheapleadnet@gmail.com">
+                              <p>
+                                You can email us <br>
+                                @ cheapleadnet@gmail.com
+                              </p>
+                            </a>
                           </li>
                         </ul>
                       </div>
@@ -709,7 +665,7 @@
                       <b class="h5">Join Our Newsletter & Marketing Communication</b>
                       <small class="d-block">We'll send you news and monthly updates.</small>
                     </p>
-                    <form action="#">
+                    <form method="POST" name="joinOurNewsLetter" netlify>
                       <div class="input-group mb-3">
                         <input type="text" class="form-control pl-4 text-light"
                           style="border: none !important; background-color: #39486b;" placeholder="yourname@gmail.com"
@@ -727,10 +683,6 @@
                   <div class="mb-0 mt-5 text-center">
                     <a href="https://twitter.com/cheaplead/" style="text-decoration: none !important;" class="p-3 h3">
                       <span class="icon-twitter"></span>
-                    </a>
-                    <a href="https://linkedin.com/in/cheaplead/" style="text-decoration: none !important;"
-                      class="p-3 h3">
-                      <span class="icon-linkedin"></span>
                     </a>
                     <a href="https://github.com/cheaplead/" style="text-decoration: none !important;" class="p-3 h3">
                       <span class="icon-github"></span>

@@ -2745,3 +2745,9 @@ h5,
 .site-navigation * {
   list-style-type: none;
 }
+
+.footer a,
+.footer a:hover,
+.footer a:active {
+  text-decoration: none !important;
+}
