@@ -1,16 +1,16 @@
 {
-  "name": "Stick-it Notes by Tharun",
-  "short_name": "Stick-it",
+  "name": "Cheaplead Web Application",
+  "short_name": "Cheaplead",
   "start_url": "index.html",
   "scope": "./",
   "icons": [
     {
-      "src": "contract.png",
+      "src": "images/icon.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "contract.png",
+      "src": "images/icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
